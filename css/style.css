@@ -1442,7 +1442,20 @@ h3 {
   background-size: cover;
   position: relative;
   z-index: 2;
+
+  }
+
+/* */
+.contact_rsvp2 {
+  padding: 184px 0;
+  background-image: url(../img/banner/contact-.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
 }
+
+
 
 @media (max-width: 767px) {
   /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
@@ -1451,12 +1464,30 @@ h3 {
   }
 }
 
+@media (max-width: 767px) {
+  /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
+  .contact_rsvp2 {
+    padding: 100px 0;
+  }
+}
+
+
+
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
   .contact_rsvp {
     padding: 100px 0;
   }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
+  .contact_rsvp2 {
+    padding: 100px 0;
+  }
+}
+
+
 
 /* line 53, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .contact_rsvp::before {
@@ -1478,6 +1509,30 @@ h3 {
   /* IE6-9 */
 }
 
+/* line 53, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
+.contact_rsvp2::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: '';
+  z-index: -1;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#001d38+0,001d38+100&0.6+0,1+100 */
+  background: -moz-linear-gradient(top, rgba(0, 29, 56, 0.6) 0%, #001d38 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 29, 56, 0.6) 0%, #001d38 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 29, 56, 0.6) 0%, #001d38 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99001d38', endColorstr='#001d38',GradientType=0 );
+  /* IE6-9 */
+}
+
+
+
+
+
 /* line 69, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .contact_rsvp .text h3 {
   font-size: 50px;
@@ -1486,7 +1541,34 @@ h3 {
   margin-bottom: 15px;
 }
 
+/* line 69, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
+.contact_rsvp2 .text h3 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+
+
 @media (max-width: 767px) {
+  /* line 69, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
+  .contact_rsvp .text h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 69, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
+  .contact_rsvp2 .text h3 {
+    font-size: 30px;
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
   /* line 69, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
   .contact_rsvp .text h3 {
     font-size: 30px;
@@ -1495,10 +1577,15 @@ h3 {
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 69, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
-  .contact_rsvp .text h3 {
+  .contact_rsvp2 .text h3 {
     font-size: 30px;
   }
 }
+
+
+
+
+
 
 /* line 86, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .singer_video .image {
@@ -7313,3 +7400,55 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+
+
+
+#cookie_notification{
+  display: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  width: 900px;
+  max-width: 90%;
+  transform: translateX(-50%);
+  padding: 25px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#cookie_notification p{
+  margin: 0;
+  font-size: 0.7rem;
+  text-align: left;
+  color: $color_text;
+}
+
+
+@media (min-width: 576px){
+  #cookie_notification.show{
+    display: flex;
+  }
+  .cookie_accept{
+    margin: 0 0 0 25px;
+  }
+}
+
+@media (max-width: 575px){
+  #cookie_notification.show{
+    display: block;
+    text-align: left;
+  }
+  .cookie_accept{
+    margin: 10px 0 0 0;
+  }
+}
